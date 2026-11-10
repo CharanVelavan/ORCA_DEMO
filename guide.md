@@ -1,6 +1,6 @@
 # ORCA-NTN showcase guide
 
-Team SolarSailor · https://orca-demo-blush.vercel.app
+Team SolarSailor · https://orca-ntn.vercel.app
 
 **Demo only. No AI models are connected.** For fresh results, clone and run
 https://github.com/CharanVelavan/ORCA using its reproducibility guide.

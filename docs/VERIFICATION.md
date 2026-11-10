@@ -10,7 +10,7 @@ backend simulation or RAG query service. All captured network actions are emulat
 - TypeScript and Vite production build passed. The optional 3D chunk retains its existing size advisory.
 - Chrome DevTools MCP checked scenario briefing → Console → Policy → Recovery → Audit with a shared
   final-state playhead. No `/api/` requests or browser console errors/warnings occurred in that journey.
-- README screenshots and the 464 KB animated GIF show the actual read-only application.
+- README screenshots and the refreshed animated GIF show the actual read-only application.
 
 Recording source commits, checksums and commander provenance are in `public/data/provenance.json`.
 The historical model benchmark is not re-measured here. Hashes and the original chain establish
@@ -21,7 +21,7 @@ selection of the past S1 Qwen capture, Final state, and navigation through Polic
 The browser verified the bundled original chain. No backend API calls or console errors/warnings
 were observed. A 320 px scenario-page check had no document horizontal overflow.
 
-Public site: https://orca-demo-blush.vercel.app
+Public site: https://orca-ntn.vercel.app
 
 Vercel project `orca-demo` is linked to this repository's `main` branch. The initial CLI production build succeeded. The first Git-triggered build exposed a missing
 transcript after unused motion-production files were removed; the transcript is now retained as a

@@ -6,7 +6,7 @@
 <p align="center"><strong>Cyber-aware coordination for NTN.</strong><br/>Team <strong>SolarSailor</strong> · SSN, Chennai · ITU AI for Good Sandbox Hackathon UAE</p>
 
 <p align="center">
-  <a href="https://orca-demo-blush.vercel.app"><strong>Explore the demo ↗</strong></a> &nbsp;·&nbsp;
+  <a href="https://orca-ntn.vercel.app"><strong>Explore the demo ↗</strong></a> &nbsp;·&nbsp;
   <a href="https://github.com/CharanVelavan/ORCA#quick-start">Run locally</a> &nbsp;·&nbsp;
   <a href="https://github.com/CharanVelavan/ORCA/blob/main/docs/JUDGE_REPRODUCIBILITY.md">Reproduce results</a> &nbsp;·&nbsp;
   <a href="https://huggingface.co/CharanVelavan/orca-ntn-qwen3.6-35b-a3b-ft-gguf">Fine-tuned Qwen</a>
@@ -27,7 +27,9 @@
 The complete implementation is maintained at **[CharanVelavan/ORCA](https://github.com/CharanVelavan/ORCA)**.
 This separate repository hosts the learning experience and read-only dashboard playback on Vercel.
 
-![Recorded showcase overview](docs/images/showcase.gif)
+![Accelerated playback of the recorded S1 scenario in the current Console](docs/images/scenario-replay.gif)
+
+*Real browser-playback frames, accelerated for this GIF. Recorded emulated evidence; no live inference.*
 
 ## What you can explore
 
@@ -40,7 +42,15 @@ This separate repository hosts the learning experience and read-only dashboard p
 | **Recovery** | Recorded approvals, stages, clean-path checks and re-attack outcomes. |
 | **Audit & Replay** | Event inspection, browser verification of original bundled chains and public evidence export. |
 
-![ORCA-NTN architecture in the learning experience](docs/images/architecture.png)
+| Recorded Console | Policy evidence |
+|---|---|
+| ![Recorded network and agent activity](docs/images/console-recorded.png) | ![Cited verdicts and reporting clocks](docs/images/policy-recorded.png) |
+
+| Recovery validation | Audit & Replay |
+|---|---|
+| ![Recorded recovery checks](docs/images/recovery-recorded.png) | ![Verified bundled audit chain](docs/images/audit-verified.png) |
+
+![ORCA-NTN architecture in the learning experience](docs/images/architecture-full.png)
 
 ## Playback is not inference
 
