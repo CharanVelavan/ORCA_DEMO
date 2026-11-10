@@ -1,3 +1,5 @@
 .method-film-quality{display:flex;justify-content:flex-end;align-items:center;gap:12px;margin-bottom:10px;font-size:12px;color:var(--ink-muted)}
 .method-film-quality select{max-width:100%;padding:6px 10px;background:var(--surface);color:var(--ink);border:1px solid var(--border-strong);font:inherit}
 @media(max-width:480px){.method-film-quality{justify-content:space-between;gap:6px;font-size:11px}}
+
+.method-film-controls{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.method-film-controls .method-film-quality{justify-content:flex-start;min-width:0}.method-film-controls select{min-width:0}@media(max-width:650px){.method-film-controls{display:grid;grid-template-columns:minmax(0,1fr);gap:2px}.method-film-controls .method-film-quality{justify-content:space-between}}

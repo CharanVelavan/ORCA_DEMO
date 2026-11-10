@@ -1,0 +1,487 @@
+WEBVTT
+
+00:00:00.213 --> 00:00:02.480
+In Chennai, emergency calls, hospital
+
+00:00:02.480 --> 00:00:03.933
+telemetry and payments rely on connected
+
+00:00:03.933 --> 00:00:04.393
+networks.
+
+00:00:05.053 --> 00:00:07.073
+When satellite backhaul fails, ORCA asks:
+
+00:00:07.400 --> 00:00:09.187
+what happened, is recovery safe, and
+
+00:00:09.187 --> 00:00:09.927
+who needs to know?
+
+00:00:10.852 --> 00:00:12.745
+ORCA coordinates secure self-healing for
+
+00:00:12.745 --> 00:00:14.612
+non-terrestrial networks, connecting cyber
+
+00:00:14.612 --> 00:00:16.305
+detection, incident response and policy
+
+00:00:16.305 --> 00:00:16.645
+review.
+
+00:00:17.039 --> 00:00:17.992
+Everything shown is emulated.
+
+00:00:18.479 --> 00:00:20.065
+This walkthrough uses deterministic mock
+
+00:00:20.065 --> 00:00:22.085
+agents, without live Qwen inference.
+
+00:00:23.075 --> 00:00:24.508
+Follow the complete flow.
+
+00:00:25.208 --> 00:00:26.368
+Six Chennai sites release telemetry
+
+00:00:26.368 --> 00:00:26.961
+progressively.
+
+00:00:27.928 --> 00:00:29.461
+Configuration scans and thirty-six features
+
+00:00:29.461 --> 00:00:32.208
+feed four models: anomaly detection, minute
+
+00:00:32.208 --> 00:00:34.635
+forecasts, fault-or-attack assessment, and
+
+00:00:34.635 --> 00:00:35.388
+capacity allocation.
+
+00:00:36.630 --> 00:00:39.130
+Typed facts enter deterministic policy rules.
+
+00:00:39.697 --> 00:00:41.190
+Verified records support six possible
+
+00:00:41.190 --> 00:00:41.877
+verdicts.
+
+00:00:42.163 --> 00:00:44.043
+Agents retrieve broader evidence and explain
+
+00:00:44.043 --> 00:00:44.530
+proposals.
+
+00:00:45.337 --> 00:00:47.313
+An uncertain classifier can abstain; missing
+
+00:00:47.313 --> 00:00:48.477
+facts remain visible.
+
+00:00:49.602 --> 00:00:51.275
+The commander reviews a scoped plan.
+
+00:00:51.602 --> 00:00:53.989
+Execution checks ownership, expiry, a cloned
+
+00:00:53.989 --> 00:00:54.982
+test and path integrity.
+
+00:00:55.415 --> 00:00:56.849
+Staged changes receive health checks.
+
+00:00:57.495 --> 00:00:58.989
+Audit evidence and policy gaps follow
+
+00:00:58.989 --> 00:00:59.942
+separate review paths.
+
+00:01:01.075 --> 00:01:03.315
+Choose S1: the night Chennai’s satellite
+
+00:01:03.315 --> 00:01:04.081
+terminals disappear.
+
+00:01:04.541 --> 00:01:05.115
+Park Town and T.
+
+00:01:05.115 --> 00:01:05.868
+Nagar are affected.
+
+00:01:06.448 --> 00:01:07.715
+We follow one recording through released
+
+00:01:07.715 --> 00:01:09.241
+observations, commander decisions,
+
+00:01:09.595 --> 00:01:11.095
+containment, recovery and audit.
+
+00:01:12.019 --> 00:01:13.559
+The scenario launches a management intrusion.
+
+00:01:14.045 --> 00:01:15.312
+Stolen access enables destructive commands
+
+00:01:15.312 --> 00:01:16.265
+against emulated terminals.
+
+00:01:16.779 --> 00:01:17.685
+The target is the operator’s ground
+
+00:01:17.685 --> 00:01:18.465
+management network.
+
+00:01:19.032 --> 00:01:19.979
+Director truth stays separate from defending
+
+00:01:19.979 --> 00:01:20.935
+agents’ observations.
+
+00:01:22.213 --> 00:01:23.640
+This run detects a management-plane attack
+
+00:01:23.640 --> 00:01:25.087
+after two simulated minutes.
+
+00:01:25.560 --> 00:01:28.093
+M1 flags anomalies; M3 assesses the
+
+00:01:28.093 --> 00:01:28.393
+cause.
+
+00:01:28.880 --> 00:01:30.547
+Its uncalibrated model score is not
+
+00:01:30.547 --> 00:01:31.420
+a guaranteed probability.
+
+00:01:32.519 --> 00:01:34.659
+M2 forecasts link and battery risk,
+
+00:01:34.692 --> 00:01:35.192
+with uncertainty.
+
+00:01:35.839 --> 00:01:37.339
+M4 allocates scarce capacity.
+
+00:01:37.972 --> 00:01:39.692
+After recovery, this panel reports no
+
+00:01:39.692 --> 00:01:40.712
+reallocation needed.
+
+00:01:41.079 --> 00:01:42.865
+Model outputs inform decisions; they never
+
+00:01:42.865 --> 00:01:43.672
+authorise execution.
+
+00:01:44.797 --> 00:01:46.343
+Mobile and satellite operators own different
+
+00:01:46.343 --> 00:01:46.977
+responses.
+
+00:01:47.463 --> 00:01:48.910
+Supporting roles cover power, CERT,
+
+00:01:49.143 --> 00:01:50.537
+regulation, policy and gaps.
+
+00:01:51.010 --> 00:01:52.383
+Cited mock explanations expose available
+
+00:01:52.383 --> 00:01:52.963
+evidence.
+
+00:01:53.277 --> 00:01:54.637
+Roles without observations remain visibly
+
+00:01:54.637 --> 00:01:55.083
+inactive.
+
+00:01:56.158 --> 00:01:57.778
+First, contain the exposed account.
+
+00:01:58.291 --> 00:01:59.871
+Review its owner, target, clone test,
+
+00:02:00.131 --> 00:02:01.111
+risk and approval window.
+
+00:02:01.451 --> 00:02:03.175
+We demonstrate the commander controls: approve
+
+00:02:03.175 --> 00:02:04.865
+the exact plan, then inspect the
+
+00:02:04.865 --> 00:02:05.471
+guarded execution.
+
+00:02:06.547 --> 00:02:07.720
+Credential rotation and multi-factor
+
+00:02:07.720 --> 00:02:09.413
+authentication require a separate hardening
+
+00:02:09.413 --> 00:02:09.713
+approval.
+
+00:02:10.027 --> 00:02:11.533
+The execution record shows five, twenty-five
+
+00:02:11.533 --> 00:02:12.687
+and one-hundred-percent health checks,
+
+00:02:13.040 --> 00:02:14.340
+followed by blocked re-attack tests.
+
+00:02:15.297 --> 00:02:17.043
+Competing isolation and failover proposals
+
+00:02:17.043 --> 00:02:18.183
+raise a cited conflict.
+
+00:02:18.630 --> 00:02:20.303
+Segment isolation remains unexecuted.
+
+00:02:20.763 --> 00:02:22.150
+Our demonstrated sequence contains access
+
+00:02:22.150 --> 00:02:24.210
+first, then authorises a verified backup.
+
+00:02:24.550 --> 00:02:25.810
+The conflict remains visible for review.
+
+00:02:26.880 --> 00:02:28.280
+Policy intelligence preserves distinct
+
+00:02:28.280 --> 00:02:30.493
+reporting triggers: noticing, awareness and
+
+00:02:30.493 --> 00:02:30.927
+occurrence.
+
+00:02:31.293 --> 00:02:32.827
+Applicability depends on the entity and
+
+00:02:32.827 --> 00:02:33.153
+evidence.
+
+00:02:33.533 --> 00:02:35.453
+ORCA records clock ambiguity instead of
+
+00:02:35.453 --> 00:02:37.033
+hiding it inside one generated answer.
+
+00:02:37.935 --> 00:02:38.002
+Who warns dependent services?
+
+00:02:38.002 --> 00:02:41.229
+The warning-duty finding includes checked
+
+00:02:41.229 --> 00:02:43.175
+records, qualifications and international
+
+00:02:43.175 --> 00:02:43.782
+comparisons.
+
+00:02:44.442 --> 00:02:45.815
+A bounded search cannot prove that
+
+00:02:45.815 --> 00:02:46.529
+no rule exists.
+
+00:02:47.269 --> 00:02:48.249
+Humans review the gap and recommendation.
+
+00:02:49.435 --> 00:02:51.022
+The knowledge base distinguishes binding
+
+00:02:51.022 --> 00:02:52.855
+records, advisory guidance and drafts.
+
+00:02:53.649 --> 00:02:54.929
+This verified source calls the space
+
+00:02:54.929 --> 00:02:55.762
+framework advisory.
+
+00:02:56.342 --> 00:02:57.535
+Retrieval assists explanations.
+
+00:02:58.462 --> 00:02:59.795
+The fine-tuned Qwen model is a
+
+00:02:59.795 --> 00:03:00.789
+separate endpoint option.
+
+00:03:01.713 --> 00:03:03.597
+Review the domestic backup proposal: both
+
+00:03:03.597 --> 00:03:05.793
+target sites, owner, clone test and
+
+00:03:05.793 --> 00:03:06.080
+scope.
+
+00:03:06.540 --> 00:03:08.013
+Checks cover gateway location, integrity,
+
+00:03:08.273 --> 00:03:09.800
+availability and management containment.
+
+00:03:10.233 --> 00:03:11.820
+Approval still depends on backend execution
+
+00:03:11.820 --> 00:03:12.267
+guards.
+
+00:03:13.297 --> 00:03:14.937
+Measured demand coverage returns at simulated
+
+00:03:14.937 --> 00:03:16.023
+minute fifty-seven.
+
+00:03:16.590 --> 00:03:18.057
+The degraded interval lasts thirty-three
+
+00:03:18.057 --> 00:03:18.370
+minutes.
+
+00:03:19.217 --> 00:03:20.643
+These sandbox timings reflect this stepped
+
+00:03:20.643 --> 00:03:22.550
+exercise and approvals, not real-world
+
+00:03:22.550 --> 00:03:23.263
+recovery guarantees.
+
+00:03:24.325 --> 00:03:25.525
+Both sites change from path A
+
+00:03:25.525 --> 00:03:26.545
+to domestic backup B.
+
+00:03:26.911 --> 00:03:28.285
+Health checks pass and re-attack results
+
+00:03:28.285 --> 00:03:28.758
+are blocked.
+
+00:03:29.378 --> 00:03:31.178
+No rollback occurs here; unavailable
+
+00:03:31.178 --> 00:03:33.078
+validation is not presented as success.
+
+00:03:34.213 --> 00:03:36.067
+CERT and regulator roles receive emulated
+
+00:03:36.067 --> 00:03:36.847
+bus notifications.
+
+00:03:37.560 --> 00:03:39.080
+Three scenario reporting windows record timely
+
+00:03:39.080 --> 00:03:40.960
+notice; two earlier clock entries remain
+
+00:03:40.960 --> 00:03:41.327
+open.
+
+00:03:41.813 --> 00:03:43.473
+No message reaches a real agency.
+
+00:03:44.491 --> 00:03:45.611
+Open the same recording in Audit
+
+00:03:45.611 --> 00:03:45.965
+and Replay.
+
+00:03:46.505 --> 00:03:48.378
+Filter rules, agents, approvals and execution.
+
+00:03:49.025 --> 00:03:49.845
+Inspect actors and evidence.
+
+00:03:50.345 --> 00:03:51.765
+The original hash chain verifies integrity,
+
+00:03:52.105 --> 00:03:52.951
+not every claim’s truth.
+
+00:03:53.852 --> 00:03:55.492
+This event records the exact failover
+
+00:03:55.492 --> 00:03:55.819
+approval.
+
+00:03:56.105 --> 00:03:57.485
+Replay stays read-only.
+
+00:03:57.719 --> 00:03:59.665
+Exports support review; the original recording
+
+00:03:59.665 --> 00:04:00.912
+retains chain verification.
+
+00:04:01.479 --> 00:04:03.775
+AI explains evidence and proposals; humans
+
+00:04:03.775 --> 00:04:05.179
+remain accountable for final judgement.
+
+00:04:06.158 --> 00:04:08.441
+Ten exercises cover normal operation, faults
+
+00:04:08.441 --> 00:04:09.405
+and cyber incidents.
+
+00:04:09.985 --> 00:04:12.265
+Additional injectors include GNSS and
+
+00:04:12.265 --> 00:04:12.925
+signalling attacks.
+
+00:04:13.465 --> 00:04:14.605
+Training includes synthetic data.
+
+00:04:14.891 --> 00:04:16.531
+Retrieval, abstention and agent behaviour
+
+00:04:16.531 --> 00:04:17.738
+retain documented limitations.
+
+00:04:18.949 --> 00:04:21.175
+Explore the code, knowledge base and
+
+00:04:21.175 --> 00:04:22.102
+fine-tuned model.
+
+00:04:22.802 --> 00:04:24.542
+Reproduce offline or connect an endpoint.
+
+00:04:25.322 --> 00:04:25.849
+Models detect.
+
+00:04:26.482 --> 00:04:27.249
+Agents coordinate.
+
+00:04:27.615 --> 00:04:28.809
+Code enforces safeguards.
+
+00:04:29.215 --> 00:04:29.915
+Humans approve.
+
+00:04:30.615 --> 00:04:31.115
+Heal the network.
+
+00:04:31.775 --> 00:04:32.715
+Improve the rulebook.
