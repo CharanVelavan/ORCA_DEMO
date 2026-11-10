@@ -20,3 +20,10 @@ The public Vercel URL was also exercised through Chrome DevTools MCP: direct sce
 selection of the past S1 Qwen capture, Final state, and navigation through Policy, Recovery and Audit.
 The browser verified the bundled original chain. No backend API calls or console errors/warnings
 were observed. A 320 px scenario-page check had no document horizontal overflow.
+
+Public site: https://orca-demo-blush.vercel.app
+
+Vercel project `orca-demo` is linked to this repository's `main` branch. The initial Git-triggered
+production build at source commit `509f7f8` completed successfully. The approved logo is byte-identical
+to the supplied horizon PNG in both websites and both README asset folders. Main implementation
+README/branding changes are published at `f4c0a48` on `ORCA` main and Pred.

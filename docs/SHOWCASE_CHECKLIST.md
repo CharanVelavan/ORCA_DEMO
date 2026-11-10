@@ -9,4 +9,4 @@
 - [x] Verify scenario, console, policy, recovery and audit journeys.
 - [x] Polish SolarSailor READMEs with real images and a lightweight GIF.
 - [x] Build, browser-test and deploy the static showcase on Vercel.
-- [ ] Verify public routes, commit/push and link the demo from the main repository.
+- [x] Verify public routes, commit/push and link the demo from the main repository.
