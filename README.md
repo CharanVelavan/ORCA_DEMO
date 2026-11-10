@@ -1,9 +1,5 @@
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/images/orca-ntn-light.png" />
-    <source media="(prefers-color-scheme: light)" srcset="docs/images/orca-ntn.png" />
-    <img src="docs/images/orca-ntn.png" alt="ORCA-NTN horizon logo" width="220" />
-  </picture>
+  <img src="docs/images/orca-ntn-light.png" alt="ORCA-NTN light horizon logo on charcoal" width="220" />
 </p>
 
 <h1 align="center">ORCA-NTN</h1>
