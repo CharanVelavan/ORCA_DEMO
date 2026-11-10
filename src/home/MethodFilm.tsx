@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { ArrowDownToLine } from 'lucide-react';
-import transcript from './motion/TRANSCRIPT.md?raw';
+import transcript from './film-transcript.md?raw';
 import './method-film.css';
 
 export function MethodFilm() {
