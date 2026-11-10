@@ -1,0 +1,55 @@
+.scn { position: relative; display: flex; flex-direction: column; width: 100%; height: 100%; min-height: 0; background: var(--bg); overflow: hidden; }
+.scn-viewport { position: relative; flex: 1 1 auto; min-height: 0; }
+.scn canvas { display: block; }
+.scn-tag { position: absolute; left: 12px; top: 10px; padding: 4px 8px; border: 1px solid var(--border); border-radius: var(--r-ctl); background: var(--surface); color: var(--ink-2); font-size: 11px; font-weight: 600; }
+.scn-error { position: absolute; top: 40px; left: 12px; right: 12px; margin: 0; padding: 8px; border: 1px solid var(--critical); border-radius: var(--r-ctl); background: var(--surface); color: var(--critical); font-size: 11px; }
+.scn-legend { position: absolute; left: 12px; right: 12px; bottom: 10px; display: flex; flex-wrap: wrap; gap: 5px 10px; padding: 5px 8px; border: 1px solid var(--border); border-radius: var(--r-ctl); background: color-mix(in srgb, var(--surface) 94%, transparent); font-size: 10px; color: var(--ink-2); }
+.scn-legend span { display: inline-flex; align-items: center; gap: 4px; }
+.scn-legend b { color: var(--ok); font-size: 12px; }
+.scn-legend [data-state="degraded"] b { color: var(--warn); }
+.scn-legend [data-state="down"] b { color: var(--critical); }
+.scn-legend [data-state="healing"] b { color: var(--healing); }
+.scn-link-key::before { content: ''; width: 14px; border-top: 2px solid var(--accent); }
+.scn-link-key--land::before { border-top-style: dashed; }
+.scn-legend i, .scn-dot { display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: var(--ok); }
+[data-state="degraded"] > i, [data-state="degraded"] > .scn-dot { background: var(--warn); }
+[data-state="down"] > i, [data-state="down"] > .scn-dot { background: var(--critical); }
+[data-state="healing"] > i, [data-state="healing"] > .scn-dot { background: var(--healing); }
+[data-state="locked"] > .scn-dot, [data-state="unknown"] > .scn-dot { background: var(--unknown); }
+.scn-label { display: inline-flex; align-items: center; gap: 4px; padding: 3px 6px; border-radius: var(--r-ctl); border: 1px solid var(--border); background: color-mix(in srgb, var(--surface) 96%, transparent); color: var(--ink); font: 600 10px var(--font-sans); white-space: nowrap; pointer-events: none; user-select: none; transition: border-color var(--dur2) var(--ease-out); }
+.scn-label b { font: 500 10px var(--font-sans); color: var(--ink-muted); }
+.scn-state-icon { color: var(--ok); font-weight: 700; }
+.scn-label[data-state="degraded"] .scn-state-icon { color: var(--warn); }
+.scn-label[data-state="down"] .scn-state-icon { color: var(--critical); }
+.scn-label[data-state="healing"] .scn-state-icon { color: var(--healing); }
+.scn-label[data-state="unknown"] .scn-state-icon, .scn-label[data-state="locked"] .scn-state-icon { color: var(--unknown); }
+.scn-label[data-state="degraded"] { border-color: var(--warn); } .scn-label[data-state="degraded"] b { color: var(--warn); }
+.scn-label[data-state="down"] { border-color: var(--critical); } .scn-label[data-state="down"] b { color: var(--critical); }
+.scn-label[data-state="healing"] { border-color: var(--healing); } .scn-label[data-state="healing"] b { color: var(--healing); }
+.scn-label[data-state="locked"] { opacity: .7; }
+.scn-label.is-focus { box-shadow: 0 0 0 2px var(--accent); }
+.scn-label--sat { color: var(--ink-muted); }
+.scn-label--threat { border-color: var(--critical); color: var(--critical); }
+.scn-holo { display: inline-flex; flex-direction: column; align-items: center; gap: 1px; padding: 4px 10px; border-radius: 8px; border: 1px solid var(--accent); background: color-mix(in srgb, var(--surface) 82%, transparent); color: var(--ink); font: 600 14px var(--font-mono); letter-spacing: .04em; white-space: nowrap; pointer-events: none; user-select: none; box-shadow: 0 0 14px color-mix(in srgb, var(--accent) 35%, transparent); backdrop-filter: blur(2px); }
+.scn-holo span { font: 500 14px var(--font-sans); color: var(--ink-muted); letter-spacing: 0; }
+.scn-holo[data-tone="critical"] { border-color: var(--critical); color: var(--critical); box-shadow: 0 0 14px color-mix(in srgb, var(--critical) 40%, transparent); }
+.scn-holo[data-tone="warn"] { border-color: var(--warn); color: var(--warn); box-shadow: 0 0 14px color-mix(in srgb, var(--warn) 40%, transparent); }
+.scn-holo[data-tone="ok"] { border-color: var(--ok); color: var(--ok); box-shadow: 0 0 14px color-mix(in srgb, var(--ok) 40%, transparent); }
+.scn-holo[data-tone="healing"] { border-color: var(--healing); color: var(--healing); }
+.scn-holo[data-tone="gap"] { border-color: #9B7BE0; color: #9B7BE0; box-shadow: 0 0 14px rgba(155, 123, 224, .4); font-family: var(--font-sans); }
+.scn-holo--mini { padding: 1px 7px; border-radius: 999px; font: 600 14px var(--font-sans); color: var(--ink); box-shadow: none; letter-spacing: 0; }
+.scn-label--mgmt { color: var(--ink-muted); }
+.scn-label[data-asset="CHN-01"] { transform: translateY(-13px); }
+.scn-label[data-asset="CHN-04"] { transform: translate(-30px, 9px); }
+.scn-label[data-asset="CHN-05"] { transform: translateX(30px); }
+.scn-label[data-asset="SAT-MGMT"] { transform: translate(-50px, -18px); }
+.scn-roster { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 5px 10px; margin: 0; padding: 9px 12px; border-top: 1px solid var(--border); background: var(--surface); list-style: none; }
+.scn-roster li { display: flex; align-items: baseline; gap: 4px; min-width: 0; color: var(--ink-2); font-size: 10px; white-space: nowrap; }
+.scn-roster strong { flex: 1; min-width: 0; overflow: hidden; color: var(--ink); text-overflow: ellipsis; }
+.scn-roster span, .scn-roster b { color: var(--ok); font-size: 10px; }
+.scn-roster [data-state="degraded"] span, .scn-roster [data-state="degraded"] b { color: var(--warn); }
+.scn-roster [data-state="down"] span, .scn-roster [data-state="down"] b { color: var(--critical); }
+.scn-roster [data-state="healing"] span, .scn-roster [data-state="healing"] b { color: var(--healing); }
+.scn-roster [data-state="unknown"] span, .scn-roster [data-state="unknown"] b, .scn-roster [data-state="locked"] span, .scn-roster [data-state="locked"] b { color: var(--unknown); }
+@media (max-width: 500px) { .scn-roster { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (prefers-reduced-motion: reduce) { .scn-holo { backdrop-filter: none; } }

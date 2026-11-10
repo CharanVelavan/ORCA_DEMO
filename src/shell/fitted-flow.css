@@ -1,0 +1,15 @@
+.fitted-flow{display:flex;flex-direction:column;flex:1;min-height:0;overflow:hidden}
+.fitted-flow__tools{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:4px;padding:6px;flex:none;border-bottom:1px solid var(--border)}
+.fitted-flow__tools output{min-width:44px;text-align:center;font:11px var(--font-mono)}
+.fitted-flow__viewport{position:relative;flex:1;min-height:0;overflow:hidden;touch-action:none}
+.fitted-flow__viewport.is-zoomed{cursor:grab}.fitted-flow__viewport.is-zoomed:active{cursor:grabbing}
+.fitted-flow__chart{position:absolute;left:0;top:0;transform-origin:top left}
+.fitted-flow__chart .sh-flow{height:auto;overflow:visible}.fitted-flow__chart .sh-flow__head{position:static}
+.fitted-flow__chart .sh-flow__canvas{overflow:visible;flex:none;padding:10px 14px}
+.fitted-flow__chart .sh-flow__edge{height:12px}.fitted-flow__chart .sh-node__inner{padding:7px 10px}
+.fitted-flow__chart .sh-diverge__edges{height:22px}.fitted-flow__chart .sh-diverge__join{height:22px}
+.fitted-flow__hint{flex:none;font-size:10px;color:var(--ink-muted);text-align:center;margin:0;padding:5px;border-top:1px solid var(--border)}
+.sh-root--workspace .sh-page__flow{overflow:hidden}
+@media(max-width:1000px){.sh-root--workspace .sh-page__flow{height:520px;min-height:520px;max-height:520px}}
+.fitted-flow__zoom{display:flex;align-items:center;gap:4px}.fitted-flow__zoom input{width:72px;accent-color:var(--accent)}.fitted-flow__zoom output{min-width:38px}.fitted-flow__viewport:not(.is-zoomed){touch-action:pan-y}.fitted-flow:fullscreen{background:var(--surface);width:100vw;height:100vh}.fitted-flow:fullscreen .fitted-flow__viewport{min-height:0}.fitted-flow__tools button:focus-visible,.fitted-flow__zoom input:focus-visible,.fitted-flow__viewport:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.fitted-flow__chart .sh-flow__head>small{display:block;font:11px var(--font-mono);color:var(--ink-muted);margin-top:4px;overflow-wrap:anywhere}

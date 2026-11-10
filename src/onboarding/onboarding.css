@@ -1,0 +1,26 @@
+.tour-launch { flex: none; }
+.tour-dialog { position: fixed; inset: 0; width: 100vw; height: 100dvh; max-width: none; max-height: none; margin: 0; padding: 0; border: 0; background: transparent; color: var(--ink); overflow: hidden; }
+.tour-dialog::backdrop { background: transparent; }
+.tour-spotlight { position: fixed; border: 3px solid white; outline: 2px solid var(--accent); pointer-events: none; box-shadow: 0 0 0 200vmax rgb(0 0 0 / .48); }
+.tour-card { position: absolute; right: 24px; bottom: 24px; width: min(440px, calc(100vw - 32px)); max-height: calc(100dvh - 48px); overflow: auto; background: white; border-top: 6px solid var(--accent); padding: 24px; box-shadow: 0 16px 64px rgb(0 0 0 / .28); }
+.tour-card__head { display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: #545454; }
+.tour-card__head button { background: transparent; border: 0; display: grid; place-items: center; cursor: pointer; color: #111; padding: 4px; }
+.tour-location { color: var(--accent); font-size: 13px; font-weight: 700; margin: 20px 0 4px; }
+.tour-card h2 { font-size: 26px; line-height: 1.1; margin: 8px 0 16px; letter-spacing: -.03em; }
+.tour-card p { line-height: 1.55; }
+.tour-note { font-size: 12px; color: #545454; }
+.tour-progress { display: flex; gap: 3px; margin: 20px 0; }
+.tour-progress span { flex: 1; height: 3px; background: #d8d8d8; }
+.tour-progress .is-reached { background: var(--accent); }
+.tour-actions { display: flex; gap: 8px; justify-content: flex-end; }
+.tour-actions button:first-child { margin-right: auto; }
+.journey { display: flex; align-items: center; gap: 8px; padding: 6px 24px; min-height: 32px; background: var(--surface-2); border-bottom: 1px solid var(--border); overflow-x: auto; flex: none; }
+.journey > span, .journey a { display: flex; align-items: center; gap: 8px; flex: none; }
+.journey a { color: var(--ink-muted); font-size: 12px; text-decoration: none; white-space: nowrap; }
+.journey a.is-current { color: var(--accent); font-weight: 750; }
+.journey-number { font-family: var(--font-mono); font-size: 11px; }
+@media (max-width: 700px) { .tour-card { right: 16px; bottom: 16px; padding: 20px; } .journey { padding-inline: 16px; } }
+
+.tour-dialog:not(:has(.tour-spotlight)) { background: rgb(0 0 0 / .48); }
+.tour-card .sh-btn { color: var(--ink); background: var(--surface); border-color: var(--border-strong); }
+.tour-card .sh-btn--primary { color: #fff; background: var(--accent); border-color: var(--accent); }

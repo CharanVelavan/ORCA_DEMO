@@ -1,0 +1,29 @@
+{
+  "text": "ORCA detects cyber threats, coordinates a trusted response, and restores services through secure, human-approved recovery.",
+  "samples": [
+    {
+      "number": "1",
+      "voice": "en-IN-Chirp3-HD-Charon",
+      "label": "Indian English \u00b7 Charon \u00b7 male",
+      "file": "1.mp3"
+    },
+    {
+      "number": "2",
+      "voice": "en-IN-Chirp3-HD-Kore",
+      "label": "Indian English \u00b7 Kore \u00b7 female",
+      "file": "2.mp3"
+    },
+    {
+      "number": "3",
+      "voice": "en-GB-Chirp3-HD-Charon",
+      "label": "British English \u00b7 Charon \u00b7 male",
+      "file": "3.mp3"
+    },
+    {
+      "number": "4",
+      "voice": "en-IN-Neural2-B",
+      "label": "Indian English \u00b7 Neural2-B \u00b7 male",
+      "file": "4.mp3"
+    }
+  ]
+}

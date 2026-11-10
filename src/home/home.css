@@ -1,0 +1,69 @@
+.home-v2 { width: 100%; max-width: 1680px; margin: 0 auto; padding: 24px; display: grid; gap: 20px; }
+.home-hero { display: grid; grid-template-columns: minmax(320px, .76fr) minmax(0, 1.24fr); align-items: stretch; min-height: 360px; }
+.home-hero__copy { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; padding: 20px 24px 20px 6px; }
+.home-hero__badges { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+.home-tag { padding: 4px 10px; border-radius: var(--r-pill); background: var(--accent-soft); color: var(--accent); font-size: var(--text-sm); font-weight: 600; }
+.home-hero h1 { margin: 0; font-size: clamp(42px, 4vw, 64px); line-height: 1.03; letter-spacing: -.035em; }
+.home-hero h1 span { color: var(--accent); }
+.home-hero__lead { max-width: 25ch; margin: 12px 0 0; color: var(--ink); font-size: clamp(20px, 1.7vw, 25px); font-weight: 600; line-height: 1.24; }
+.home-hero__description { max-width: 48ch; margin: 12px 0 0; color: var(--ink-2); font-size: var(--text-md); line-height: 1.55; }
+.home-hero__actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 20px; }
+.home-hero__actions .sh-btn { white-space: nowrap; }
+.home-hero__actions .sh-btn:disabled { opacity: .55; cursor: not-allowed; }
+.home-hero__notice { margin: 10px 0 0; font-size: var(--text-sm); color: var(--ink-muted); }
+.home-error { margin: 0; color: var(--critical); font-size: var(--text-sm); }
+.home-hero__visual { position: relative; min-width: 0; min-height: 360px; overflow: hidden; border: 1px solid var(--border); border-radius: var(--r-lg); background: var(--bg-tint); }
+.home-scene { position: absolute; inset: 0; margin: 0; overflow: hidden; }
+.home-scene__canvas, .home-scene__canvas > div { width: 100%; height: 100%; }
+.home-scene__canvas canvas { display: block; }
+.home-scene figcaption { position: absolute; bottom: 12px; left: 14px; padding: 4px 8px; border-radius: var(--r-chip); background: var(--surface); color: var(--ink-2); font-size: var(--text-xs); }
+.home-scene__loading, .home-scene__message { position: absolute; bottom: 38px; left: 14px; margin: 0; color: var(--ink-muted); font-size: var(--text-sm); }
+.home-network { position: absolute; top: 14px; right: 14px; width: min(230px, 42%); padding: 12px; border: 1px solid var(--border); border-radius: var(--r-card); background: color-mix(in srgb, var(--surface) 95%, transparent); box-shadow: var(--shadow-2); }
+.home-network__head { display: flex; align-items: center; gap: 7px; color: var(--ink); font-size: var(--text-md); }
+.home-network__head svg { color: var(--accent); }
+.home-network dl { margin: 8px 0 0; }
+.home-network dl > div { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 5px; padding: 7px 0; border-top: 1px solid var(--border); }
+.home-network dt { color: var(--ink-muted); font-size: var(--text-xs); }
+.home-network dd { margin: 0; color: var(--ink-2); font-size: var(--text-xs); font-weight: 600; }
+.home-kpis { display: grid; grid-template-columns: minmax(190px, 1.6fr) repeat(6, minmax(0, 1fr)); gap: 0; padding: 14px 0; border: 1px solid var(--border); border-radius: var(--r-card); background: var(--surface); box-shadow: var(--shadow-1); }
+.home-kpis > * { min-width: 0; padding: 0 14px; }
+.home-kpis > * + * { border-left: 1px solid var(--border); }
+.home-kpis .sh-stat__value { font-size: var(--text-lg); }
+.home-kpis__scenario { display: flex; flex-direction: column; gap: 5px; }
+.home-kpis__scenario label { color: var(--ink-muted); font-size: var(--text-sm); }
+.home-kpis__scenario select { width: 100%; height: 32px; padding: 0 8px; border: 1px solid var(--border); border-radius: var(--r-ctl); background: var(--surface-2); color: var(--ink); font: inherit; font-weight: 600; }
+.home-destinations__header { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 10px; }
+.home-destinations__header h2 { margin: 0; font-size: var(--text-lg); }
+.home-destinations__header > span { color: var(--ink-muted); font-size: var(--text-sm); }
+.home-cards { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 10px; }
+.home-card { min-width: 0; display: flex; flex-direction: column; gap: 7px; padding: 8px 8px 14px; border: 1px solid var(--border); border-radius: var(--r-card); background: var(--surface); box-shadow: var(--shadow-1); transition: border-color 150ms ease, box-shadow 150ms ease; }
+.home-card__art { display: flex; align-items: center; height: 58px; padding: 0 14px; border-radius: var(--r-ctl); background: var(--accent-soft); color: var(--accent); }
+.home-card:nth-child(even) .home-card__art { background: var(--surface-2); }
+.home-card__title { display: flex; align-items: center; justify-content: space-between; gap: 4px; padding: 0 5px; color: var(--ink); font-size: var(--text-md); font-weight: 700; }
+.home-card__title svg { flex: none; color: var(--accent); }
+.home-card__text { padding: 0 5px; color: var(--ink-muted); font-size: var(--text-sm); line-height: 1.4; }
+@media (hover: hover) { .home-card:hover { border-color: var(--accent); box-shadow: var(--shadow-2); } }
+@media (max-width: 1200px) {
+  .home-kpis { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px 0; }
+  .home-kpis > :nth-child(5) { border-left: 0; }
+  .home-cards { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+@media (max-width: 760px) {
+  .home-v2 { padding: 16px; }
+  .home-hero { grid-template-columns: 1fr; }
+  .home-hero__copy { padding: 12px 0 20px; }
+  .home-hero__visual { min-height: 300px; }
+  .home-kpis { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .home-kpis > :nth-child(odd) { border-left: 0; }
+  .home-kpis > :nth-child(even) { border-left: 1px solid var(--border); }
+  .home-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .home-destinations__header > span { display: none; }
+}
+@media (max-width: 400px) {
+  .home-network { width: 54%; }
+  .home-cards { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-card { transition: none; }
+  .home-v2 .sh-spin { animation: none; }
+}

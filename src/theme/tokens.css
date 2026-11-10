@@ -1,0 +1,165 @@
+/* ORCA-NTN live UI tokens.
+   Light is the primary, calm-premium theme (matches docs/plan/mockups/*).
+   Dark remains available via [data-theme="dark"]; the shell defaults to light.
+   Soft tints are declared inside each theme block so color-mix follows the
+   theme it is used in. */
+
+:root {
+  /* --- Light theme (default) --- */
+  --bg: #F3F3F3;
+  --bg-tint: #EBEBEB;
+  --surface: #FFFFFF;
+  --surface-2: #F3F3F3;
+  --surface-3: #EAEAEA;
+  --ink: #111111;
+  --ink-2: #444444;
+  --ink-muted: #606060;
+  --ink-faint: #777777;
+  --border: #D8D8D8;
+  --border-strong: #A9A9A9;
+
+  --accent: #6D001A;
+  --accent-strong: #510014;
+  --accent-ink: #FFFFFF;
+  --ok: #216044;
+  --warn: #805900;
+  --critical: #B3261E;
+  --healing: #4C5960;
+  --unknown: #737373;
+
+  --accent-soft: color-mix(in srgb, var(--accent) 12%, var(--surface));
+  --ok-soft: color-mix(in srgb, var(--ok) 13%, var(--surface));
+  --warn-soft: color-mix(in srgb, var(--warn) 14%, var(--surface));
+  --critical-soft: color-mix(in srgb, var(--critical) 12%, var(--surface));
+  --healing-soft: color-mix(in srgb, var(--healing) 12%, var(--surface));
+  --unknown-soft: color-mix(in srgb, var(--unknown) 12%, var(--surface));
+
+  --shadow-1: none;
+  --shadow-2: none;
+  --shadow-3: 0 2px 6px rgba(20, 26, 34, .07), 0 18px 40px -16px rgba(20, 26, 34, .18);
+  --ring: 0 0 0 3px color-mix(in srgb, var(--accent) 30%, transparent);
+
+  /* --- Typography --- */
+  --font-sans: 'Geist Sans', 'Geist', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Geist Mono', ui-monospace, 'SF Mono', monospace;
+  --text-xs: 11px;
+  --text-sm: 13px;
+  --text-base: 14px;
+  --text-md: 14px;
+  --text-lg: 16px;
+  --text-xl: 20px;
+  --text-2xl: 26px;
+  --text-3xl: 34px;
+  --text-hero: 56px;
+  --lh-tight: 1.15;
+  --lh-snug: 1.3;
+  --lh-normal: 1.5;
+  --tracking-tight: -0.02em;
+  --tracking-wide: 0.04em;
+
+  /* --- 8pt spacing scale --- */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 48px;
+  --s-8: 64px;
+
+  /* --- Radii --- */
+  --r-chip: 2px;
+  --r-ctl: 2px;
+  --r-card: 0px;
+  --r-lg: 2px;
+  --r-pill: 2px;
+
+  /* --- Motion presets (see motion-design skill: ease-out for enter/exit,
+     ease-in-out for on-screen morph, linear for progress, ease for hover) --- */
+  --dur1: 120ms;
+  --dur2: 180ms;
+  --dur3: 240ms;
+  --dur4: 280ms;
+  --ease-out: cubic-bezier(.165, .84, .44, 1);        /* ease-out-quart */
+  --ease-out-quart: cubic-bezier(.165, .84, .44, 1);
+  --ease-inout: cubic-bezier(.645, .045, .355, 1);
+  --ease-inout-cubic: cubic-bezier(.645, .045, .355, 1);
+  --ease-standard: ease;
+
+  /* Named presets: use these in components for intent-consistent motion. */
+  --motion-enter: transform var(--dur2) var(--ease-out), opacity var(--dur2) var(--ease-out);
+  --motion-morph: transform var(--dur3) var(--ease-inout), opacity var(--dur3) var(--ease-inout);
+  --motion-hover: background-color 150ms var(--ease-standard), color 150ms var(--ease-standard), border-color 150ms var(--ease-standard), box-shadow 150ms var(--ease-standard);
+
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --bg: #111111;
+  --bg-tint: #15181C;
+  --surface: #1A1D21;
+  --surface-2: #22262B;
+  --surface-3: #2A2E34;
+  --ink: #E7E9EC;
+  --ink-2: #C3C9D1;
+  --ink-muted: #9AA3AE;
+  --ink-faint: #9aa4ae;
+  --border: #41464d;
+  --border-strong: #707780;
+
+  --accent: #D8889B;
+  --accent-strong: #E4A5B4;
+  --accent-ink: #0E1114;
+  --ok: #74B08C;
+  --warn: #D6A24E;
+  --critical: #E07F72;
+  --healing: #94b8bd;
+  --unknown: #8A8F98;
+
+  --accent-soft: color-mix(in srgb, var(--accent) 18%, var(--surface));
+  --ok-soft: color-mix(in srgb, var(--ok) 18%, var(--surface));
+  --warn-soft: color-mix(in srgb, var(--warn) 18%, var(--surface));
+  --critical-soft: color-mix(in srgb, var(--critical) 18%, var(--surface));
+  --healing-soft: color-mix(in srgb, var(--healing) 18%, var(--surface));
+  --unknown-soft: color-mix(in srgb, var(--unknown) 18%, var(--surface));
+
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, .3);
+  --shadow-2: 0 2px 8px rgba(0, 0, 0, .35);
+  --shadow-3: 0 18px 44px -18px rgba(0, 0, 0, .6);
+
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body, #root { height: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--lh-normal);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.mono, code {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+a { color: inherit; text-decoration: none; }
+
+:focus-visible { outline: none; box-shadow: var(--ring); border-radius: var(--r-ctl); }
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 1ms !important;
+    transition-duration: 1ms !important;
+  }
+}
+
+.app-loading { display: grid; place-content: center; gap: 6px; height: 100dvh; text-align: center; color: var(--ink-muted); font-size: var(--text-sm); }
+.app-loading .mono { color: var(--ink); font-size: var(--text-md); }

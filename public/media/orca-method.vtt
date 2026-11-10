@@ -1,0 +1,124 @@
+WEBVTT
+
+00:00:00.270 --> 00:00:02.750
+In Chennai, homes, hospitals and emergency
+
+00:00:02.750 --> 00:00:05.320
+services depend on connected networks.
+
+00:00:05.950 --> 00:00:08.030
+ORCA explores how an emulated satellite
+
+00:00:08.030 --> 00:00:10.570
+backed network can protect these everyday
+
+00:00:10.570 --> 00:00:11.220
+services.
+
+00:00:12.770 --> 00:00:14.950
+An attacker uses stolen credentials to
+
+00:00:14.950 --> 00:00:16.850
+reach the satellite operator’s ground
+
+00:00:16.850 --> 00:00:18.200
+management network.
+
+00:00:18.850 --> 00:00:20.200
+Terminals are disrupted.
+
+00:00:21.050 --> 00:00:22.590
+A backup path may also be
+
+00:00:22.590 --> 00:00:25.150
+unsafe, and service providers need to
+
+00:00:25.150 --> 00:00:25.640
+be told.
+
+00:00:26.270 --> 00:00:29.640
+ORCA collects telemetry and prepares features.
+
+00:00:30.510 --> 00:00:32.040
+Model one detects anomalies.
+
+00:00:32.910 --> 00:00:35.160
+Model two forecasts failure in minutes.
+
+00:00:35.710 --> 00:00:38.460
+Model three distinguishes faults from attacks,
+
+00:00:39.070 --> 00:00:39.740
+or abstains.
+
+00:00:40.610 --> 00:00:42.980
+Model four allocates limited capacity.
+
+00:00:44.770 --> 00:00:47.100
+Role agents coordinate around the evidence.
+
+00:00:47.690 --> 00:00:49.930
+Retrieval searches the knowledge base for
+
+00:00:49.930 --> 00:00:50.780
+relevant sources.
+
+00:00:51.350 --> 00:00:53.170
+A deterministic rule engine applies verified
+
+00:00:53.170 --> 00:00:55.680
+records and returns cited verdicts.
+
+00:00:56.030 --> 00:00:58.270
+The agents explain; the human remains
+
+00:00:58.270 --> 00:00:58.860
+accountable.
+
+00:01:01.770 --> 00:01:04.350
+Before a fix, ORCA checks the
+
+00:01:04.350 --> 00:01:06.610
+backup path and tests the plan
+
+00:01:06.610 --> 00:01:07.240
+in a clone.
+
+00:01:08.330 --> 00:01:10.170
+In assisted mode, a human approves
+
+00:01:10.170 --> 00:01:11.360
+the exact plan.
+
+00:01:11.770 --> 00:01:13.200
+The change rolls out in stages:
+
+00:01:13.810 --> 00:01:16.410
+five, twenty five, then one hundred
+
+00:01:16.410 --> 00:01:16.980
+percent.
+
+00:01:17.550 --> 00:01:19.650
+Re-attack checks and rollback guard the
+
+00:01:19.650 --> 00:01:20.080
+result.
+
+00:01:22.770 --> 00:01:24.870
+Services can recover while a hash
+
+00:01:24.870 --> 00:01:26.720
+chained audit preserves the evidence.
+
+00:01:27.510 --> 00:01:29.550
+The gap analyst records potential policy
+
+00:01:29.550 --> 00:01:30.920
+gaps for human review.
+
+00:01:31.850 --> 00:01:35.210
+Models detect, agents coordinate, code
+
+00:01:35.210 --> 00:01:37.440
+decides, and humans approve.

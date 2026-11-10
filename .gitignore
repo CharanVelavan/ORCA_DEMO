@@ -1,0 +1,12 @@
+.codex/
+.vercel/
+node_modules/
+dist/
+.shots/
+*.tsbuildinfo
+.env*
+
+.showcase-build/
+.vercel
+
+node_modules

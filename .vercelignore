@@ -1,0 +1,8 @@
+node_modules
+.showcase-build
+.shots
+.codex
+.git
+dist
+.env*
+src/home/motion
