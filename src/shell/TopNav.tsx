@@ -25,7 +25,7 @@ export function TopNav() {
   return (
     <header className="sh-topnav">
       <NavLink to={`/${suffix}`} className="sh-brand" aria-label="ORCA-NTN home">
-        <span className="sh-brand__mark"><OrcaMark size={44} /></span>
+        <span className="sh-brand__mark"><OrcaMark size={40} /></span>
         <span className="sh-brand__name">ORCA-<b>NTN</b></span>
       </NavLink>
       <nav className="sh-nav" aria-label="Primary">

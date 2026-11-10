@@ -47,7 +47,7 @@
 @media (max-width: 700px) { .sh-root--workspace { height: auto; min-height: 100dvh; overflow: auto; } .sh-root--workspace .sh-page__row { flex-direction: column; overflow: visible; } .sh-root--workspace .sh-page__flow { flex-basis: auto !important; max-height: 400px; } .sh-resizer { display: none; } .session-controls { flex-wrap: wrap; } .sh-stepper { overflow-x: auto; } .sh-stepper__list { min-width: 650px; } .graph-dialog { width: 100vw; height: 100dvh; margin: 0; } }
 
 .sh-topnav .sh-brand__name, .sh-topnav .sh-brand__name b { color: white; }
-.sh-topnav .sh-brand__mark { border-radius: 0; background: #6d001a; }
+
 .sh-root--workspace .sh-footer { flex: none; }
 .workspace-session { z-index: 25; }
 .graph-full .fg-av { border-radius: 2px; }
@@ -88,7 +88,7 @@
 [data-theme="dark"] .shared-workspace__pane:nth-child(2)>header{background:#6d001a;color:white}
 [data-theme="dark"] .simulator-transport select{background:var(--surface-2);color:var(--ink)}
 @media(max-width:1100px){.theme-toggle span{display:none}}
-.sh-topnav .sh-brand__mark{width:36px;height:36px;min-width:36px;padding:3px;display:grid;place-items:center;background:#6d001a;color:#fff}.sh-topnav .sh-brand__name{font-weight:800}.sh-topnav .sh-brand__name b{font-weight:500;color:#ccc}
+.sh-topnav .sh-brand__name{font-weight:800}.sh-topnav .sh-brand__name b{font-weight:500;color:#ccc}
 [data-theme="dark"] .pf{--gap-c:#d8889b}
 [data-theme="dark"] .scn-holo[data-tone="gap"]{color:#d8889b;border-color:#d8889b}
 
@@ -96,5 +96,6 @@
 .repository-link{white-space:nowrap;text-decoration:none}
 @media(max-width:600px){.repository-link{width:32px;min-width:32px;justify-content:center;padding-inline:0}.repository-link>span{display:none}}
 
-/* Approved horizon logo retains its supplied colours on a white tile. */
-.sh-topnav .sh-brand__mark{width:44px;height:44px;min-width:44px;padding:0;background:#fff;box-shadow:none}
+/* One non-shrinking frame; child fills it even if older CSS is still cached. */
+.sh-topnav .sh-brand__mark{box-sizing:border-box;flex:0 0 40px;width:40px;height:40px;min-width:40px;padding:0;display:flex;align-items:center;justify-content:center;overflow:hidden;border-radius:0;background:#0d1117;box-shadow:none}
+.sh-topnav .sh-brand__mark .orca-logo{display:block;width:100%;height:100%;max-width:100%;object-fit:contain}

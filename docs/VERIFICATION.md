@@ -28,3 +28,8 @@ transcript after unused motion-production files were removed; the transcript is 
 small standalone source file. The approved logo is byte-identical
 to the supplied horizon PNG in both websites and both README asset folders. Main implementation
 README/branding changes are published at `f4c0a48` on `ORCA` main and Pred.
+
+Header-logo regression: after consolidating competing 36/44 px tile rules, the child image fills a
+non-shrinking 40 px frame. Chrome DevTools geometry checks passed at 320, 800 and 1440 px: the logo
+stays inside the header/frame and does not overlap the brand text. A forced legacy 36 px frame also
+passes. The light-ink variant is used by dark headers and selected in dark-mode README picture sources.
